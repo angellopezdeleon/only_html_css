@@ -13,7 +13,7 @@ body {
     text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
     font-family: "Fredoka";
     font-size: 20px;
-    min-width: 350px;
+    min-width: 100vw;
     height: 100vh;
 }
 
@@ -58,6 +58,7 @@ span {
 
 header {
     margin: 0;
+    width: 100vw;
 }
 
 #index__header {
@@ -433,6 +434,10 @@ a:hover {
     width: auto;
 }
 
+.footer__adress { 
+    display: none;
+}
+
 /* PARA TABLETS */
 
 @media only screen and (min-width: 596px) and (max-width: 949px) {
@@ -507,6 +512,8 @@ a:hover {
         height: 80%;
     }
 }
+
+
 
 /* PARA PANTALLAS GRANDES */
 

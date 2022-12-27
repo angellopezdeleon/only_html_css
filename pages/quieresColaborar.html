@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nodal Films Colabora</title>
+        <link
+            rel="shortcut icon"
+            href="../images/logos/nodalFavicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Fredoka"
+        />
+        <link rel="stylesheet" href="../css/estilos.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body class="short__body">
+        <header>
+            <div id="container__logo__nav">
+                <div
+                    id="logo"
+                    class="animate__animated animate__fadeIn animate__fadeInLeft animate__delay-0.1s"
+                >
+                    <a href="../index.html"
+                        ><img
+                            a
+                            src="../images/logos/soloNodalLogo2.png"
+                            alt="Logotipo Nodal"
+                    /></a>
+                </div>
+                <nav>
+                    <input type="checkbox" id="menu" />
+                    <label
+                        for="menu"
+                        id="hamburguer"
+                        class="animate__animated animate__fadeIn animate__fadeInRight animate__delay-0.1s"
+                    >
+                        ☰
+                    </label>
+                    <ul
+                        class="animate__animated animate__fadeIn animate__fadeInRight animate__delay-0.1s"
+                    >
+                        <li><a href="trabajos.html">TRABAJOS</a></li>
+                        <li><a href="servicios.html">SERVICIOS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- De momento, un texto simple con algún enlace para recibir contacto. -->
+        <main class="main__text">
+            <h1>Queremos trabajar contigo</h1>
+            <p>
+                Si eres un <span>apasionado</span> del audiovisual,
+                N<span>●</span>dal quiere trabajar contigo. <br /><br />Si tu
+                productora necesita un <span>aliado</span>, N<span>●</span>dal
+                quiere aliarse contigo. <br /><br />No importa al campo que te
+                dediques, si quieres trabajar con N<span>●</span>dal no dudes en
+                <a href="contacto.html"><span>contactar</span> con nosotros.</a>
+            </p>
+        </main>
+        <footer>
+            <div class="footer__element">
+                <h3>Dirección</h3>
+                <p>C/ Luis de Hoyos Sainz, 112<br />28030 Madrid</p>
+            </div>
+            <div class="footer__element">
+                <h3>Redes sociales</h3>
+                <!-- Enlaces provisionales hasta apertura de negocio -->
+                <div id="rrss__logo__group">
+                    <a href="https://www.behance.net/" target="”_blank”"
+                        ><div id="logo__behance"></div
+                    ></a>
+                    <a href="https://twitter.com/" target="”_blank”"
+                        ><div id="logo__twitter"></div
+                    ></a>
+                    <a href="https://www.instagram.com/" target="”_blank”"
+                        ><div id="logo__instagram"></div
+                    ></a>
+                </div>
+            </div>
+            <div class="footer__element">
+                <a href="quieresColaborar.html"><h3>¿Quieres colaborar?</h3></a>
+                <p>Nosotros queremos colaborar contigo.</p>
+            </div>
+        </footer>
+        <div id="particles-js"></div>
+        <script src="./../particles.js-2.0.0/particles.js"></script>
+        <script>
+            particlesJS.load("particles-js", "./../particles.js-2.0.0/particlesjs-config.json", function () {
+                console.log("callback - particles.js config loaded");
+            });
+        </script>
+    </body>
+</html>

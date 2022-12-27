@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodal Films Contacto</title>
+    <link rel="shortcut icon" href="../images/logos/nodalFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka">
+    <link rel="stylesheet" href="../css/estilos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="short__body">
+    <header>
+        <div id="container__logo__nav">
+            <div id="logo" class="animate__animated animate__fadeIn animate__fadeInLeft animate__delay-0.1s">
+                <a href="../index.html"><img a src="../images/logos/soloNodalLogo2.png" alt="Logotipo Nodal"/></a>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu">
+                <label for="menu" id="hamburguer" class="animate__animated animate__fadeIn animate__fadeInRight animate__delay-0.1s"> ☰ </label>
+                <ul class="animate__animated animate__fadeIn animate__fadeInRight animate__delay-0.1s">
+                    <li><a href="trabajos.html">TRABAJOS</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Formulario de contacto básico -->
+    <main class="main__text" id="main__form">
+        <h1 id="form__h1">C<span>●</span>ntáctan<span>●</span>s</h1>
+        <form id="form__contact" action="envio.php" method="post">
+            <input type="text" placeholder=" Nombre" class="form__element" id="form__nombre">
+            <input type="text" placeholder=" Apellidos" class="form__element" id="form__apellido">
+            <input type="email" placeholder=" Email" class="form__element" id="form__email">
+                <select for="soy" class="form__element" id="form__select">
+                    <option value="">  Selecciona una opción:</option>
+                    <option value="Particular"> Particular</option>
+                    <option value="Empresa"> Empresa</option>
+                    <option value="Productora colaboradora"> Productora colaboradora</option>
+                </select>
+            <input type="text" placeholder=" Título mensaje" class="form__element" id="form__title__menssage">
+            <textarea rows="6" cols="180 type="text" placeholder=" Deja aquí tu mensaje" class="form__element" id="form__textarea"></textarea>
+            <input id="form__button" type="submit" value="Enviar" class="form__element" id="form__button">
+        </form>
+    </main>
+    <footer>
+        <div class="footer__element">
+            <h3>Dirección</h3>
+            <p>C/ Luis de Hoyos Sainz, 112<br>28030 Madrid</p>
+        </div>
+        <div class="footer__element">
+            <h3>Redes sociales</h3>
+            <!-- Enlaces provisionales hasta apertura de negocio -->
+            <div id="rrss__logo__group">
+                <a href="https://www.behance.net/" target=”_blank”><div id="logo__behance"></div></a>
+                <a href="https://twitter.com/" target=”_blank”><div id="logo__twitter"></div></a>
+                <a href="https://www.instagram.com/" target=”_blank”><div id="logo__instagram"></div></a>
+            </div>
+        </div>
+        <div class="footer__element">
+            <a href="quieresColaborar.html"><h3>¿Quieres colaborar?</h3></a>
+            <p>Nosotros queremos colaborar contigo.</p>
+        </div>
+    </footer>
+    <div id="particles-js"></div>
+    <script src="./../particles.js-2.0.0/particles.js"></script>
+    <script>
+        particlesJS.load("particles-js", "./../particles.js-2.0.0/particlesjs-config.json", function () {
+            console.log("callback - particles.js config loaded");
+        });
+    </script>
+</body>
+</html>

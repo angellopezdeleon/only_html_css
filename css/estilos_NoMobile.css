@@ -1,0 +1,592 @@
+/* GENERAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+
+body {
+    background: black;
+    color: white;
+    text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
+    font-family: "Fredoka";
+    font-size: 20px;
+    min-width: 350px;
+    height: 100vh;
+}
+
+.short__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+span {
+    color: #c23431;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background: #000000;
+}
+
+#particles-js-header {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    max-height: 9%;
+    top: 0;
+    background: #000000;
+    overflow: hidden;
+}
+
+#particles-js-footer {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 11.5%;
+    background: #000000;
+}
+
+/* CABECERA */
+
+header {
+    margin: 0;
+}
+
+#index__header {
+    background-image: url("../images/projects/img_(1).gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 50vw;
+    filter: opacity(0.8);
+    transition: filter 0.5s ease-in-out, background-size 0.5s;
+}
+
+#index__header:hover {
+    background-size: 105%;
+    filter: opacity(1);
+}
+
+#container__logo__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 22px 25px 28px 25px;
+}
+
+#logo {
+    margin: 0;
+    --animate-delay: 0.1s;
+    --animate-duration: 0.5s;
+}
+
+#logo a {
+    display: flex;
+    align-content: center;
+}
+
+#logo img {
+    width: 180px;
+    transition: transform 0.3s;
+}
+
+#logo img:hover {
+    transform: scale(1.02);
+}
+
+nav {
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+#menu {
+    display: none;
+}
+
+ul {
+    display: none;
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    --animate-delay: 0.1s;
+    --animate-duration: 0.5s;
+}
+
+input:checked ~ ul {
+    display: block;
+}
+
+#hamburguer {
+    text-align: right;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    font-weight: bold;
+    user-select: none;
+}
+
+li {
+    display: flow;
+    margin: 0;
+    text-align: right;
+    list-style: none;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-size: 16px;
+}
+
+/* CUERPO */
+
+.container__projects {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+.container__projects__trabajos {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+.project {
+    background-size: 105%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 100%;
+    height: 100vw;
+    filter: opacity(0.6);
+    transition: filter 0.7s, background-size 0.7s, font-size 0.7s,
+    text-shadow 0.7s;
+    color: #c2b6b6;
+}
+
+.project:hover {
+    filter: opacity(1);
+    color: #932523;
+    text-shadow: rgb(67, 3, 3) 0.05em 0.05em 0.05em;
+    font-size: 22px;
+    background-size: 110%;
+}
+
+h2 {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s, color 0.5s;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 4px;
+    box-shadow: rgb(67, 3, 3) 0.03em 0.03em 0.03em;
+    background-color: #f73f3b;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+h2:hover::before {
+    opacity: 1;
+}
+
+h2:hover {
+    transform: scale(1.03);
+    color: #f73f3b;
+}
+
+/* FORMULARIO */
+
+#main__form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 30%;
+    min-height: 38%;
+}
+
+#form__contact {
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+        "form__nombre form__apellido"
+        "form__email form__select"
+        "form__title__menssage form__title__menssage"
+        "form__textarea form__textarea"
+        "form__button form__button";
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-gap: 10px;
+}
+
+#form__nombre {
+    grid-area: form__nombre;
+    width: 100%;
+    padding-left: 2%;
+}
+#form__apellido {
+    grid-area: form__apellido;
+    width: 100%;
+    padding-left: 2%;
+}
+#form__email {
+    grid-area: form__email;
+    width: 100%;
+    padding-left: 2%;
+}
+#form__select {
+    grid-area: form__select;
+    width: 100%;
+    padding-left: 2%;
+}
+#form__title__menssage {
+    grid-area: form__title__menssage;
+    width: 100%;
+    padding-left: 1%;
+}
+#form__textarea {
+    grid-area: form__textarea;
+    width: 100%;
+    padding: 1% 0 0 1%;
+}
+#form__button {
+    grid-area: form__button;
+    width: 100%;
+}
+
+.form__element {
+    height: auto;
+    padding-left: 2%;
+    box-sizing: border-box;
+}
+
+#form__h1 {
+    /* text-align: left; */
+    font-size: 30px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+input,
+select,
+textarea,
+#form__button {
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: 100%;
+    color: gray;
+    border-radius: 0;
+    border: 1px solid #fff;
+    font-family: "Fredoka";
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    resize: none;
+}
+
+/* PÁGINAS DE SOLO TEXTO */
+
+main p {
+    font-size: 18px;
+    padding: 2% 20% 2% 20%;
+}
+
+h1 {
+    padding: 2% 20% 2% 20%;
+    text-align: center;
+    font-size: 20px;
+}
+
+main p a {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: white;
+
+}
+
+.main__text {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 11.5%;
+    bottom: 0;
+}
+
+.footer__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    font-size: 16px;
+    padding: 0;
+    margin: 12px 0 0 0;
+}
+
+#colab {
+    transition-duration: 0.3s;
+}
+
+#colab:hover {
+    transform: scale(1.15);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+a:hover {
+    color: rgb(197, 48, 48);
+}
+
+#logo__behance,
+#logo__twitter,
+#logo__instagram {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.12, 1.275);
+}
+
+#logo__behance:hover,
+#logo__twitter:hover,
+#logo__instagram:hover {
+    transform: scale(1.9);
+    filter: drop-shadow(0 0 0.3rem rgb(49, 49, 49)) opacity(0.9);
+}
+
+#logo__behance {
+    background: url("../images/logos/behanceLogo.png") no-repeat center center /
+        cover;
+}
+#logo__twitter {
+    background: url("../images/logos/twitterLogo.png") no-repeat center center /
+        cover;
+}
+#logo__instagram {
+    background: url("../images/logos/instagramLogo.png") no-repeat center center /
+        cover;
+}
+
+#rrss__logo__group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: auto;
+}
+
+/* PARA TABLETS */
+
+@media only screen and (min-width: 596px) and (max-width: 949px) {
+    #container__logo__nav {
+        display: flex;
+        align-content: center;
+    }
+
+    nav {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: stretch;
+    }
+
+    ul {
+        margin: 0;
+        display: flex;
+        flex-flow: nowrap;
+        position: static;
+        gap: 30px;
+        align-content: center;
+    }
+
+    #hamburguer {
+        display: none;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    li {
+        display: flex;
+        position: static;
+        list-style: none;
+        background: none;
+        text-align: center;
+        align-items: center;
+        top: 0;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .container__projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container__projects__trabajos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project {
+        font-size: 15px;
+        max-height: 50vw;
+    }
+
+    .project:hover {
+        font-size: 16px;
+    }
+
+    #last__project {
+        display: none;
+    }
+
+    #form__contact {
+        height: 80%;
+    }
+}
+
+/* PARA PANTALLAS GRANDES */
+
+@media only screen and (min-width: 950px) {
+    #index__header {
+        max-height: 496px;
+    }
+
+    #container__logo__nav {
+        display: flex;
+        align-content: center;
+    }
+
+    nav {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: stretch;
+    }
+
+    ul {
+        margin: 0;
+        display: flex;
+        flex-flow: nowrap;
+        position: inherit;
+        gap: 50px;
+        align-content: center;
+    }
+
+    #hamburguer {
+        display: none;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    li {
+        display: flex;
+        position: static;
+        list-style: none;
+        background: none;
+        text-align: center;
+        align-items: center;
+        top: 0;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .container__projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container__projects__trabajos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project {
+        font-size: 17px;
+        height: 33.33vw;
+        width: 33.33vw;
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    .project:hover {
+        font-size: 18px;
+    }
+
+    #index__project {
+        display: inherit;
+    }
+
+    #form__contact {
+        height: 100%;
+    }
+}

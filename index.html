@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1200, initial-scale=1.0">
+        <title>Nodal Films Website</title>
+        <link rel="shortcut icon" href="images/logos/nodalFavicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka">
+        <link rel="stylesheet" href="css/estilos.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <body>
+    <!-- La cabecera de esta página tendrá un vídeo presentación de la productora en lugar del gif que está actualmente -->
+        <header id="index__header">
+            <div id="container__logo__nav">
+                <div id="logo" class="animate__animated animate__fadeIn animate__fadeInLeft">
+                    <a href="index.html"><img a src="images/logos/soloNodalLogo2.png" alt="Logotipo Nodal"/></a>
+                </div>
+                <nav>
+                    <input type="checkbox" id="menu">
+                    <label for="menu" id="hamburguer" class="animate__animated animate__fadeIn animate__fadeInRight animate__delay-0.5s"> ☰ </label>
+                    <ul class="animate__animated animate__fadeIn animate__fadeInRight">
+                        <li><a href="pages/trabajos.html">TRABAJOS</a></li>
+                        <li><a href="pages/servicios.html">SERVICIOS</a></li>
+                        <li><a href="pages/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Aquí tendríamos una muestra representativa de los trabajos de la productora. -->
+        <main class="container__projects">
+            <div class="project" style="background-image: url('images/projects/img15.jpg');"><h2>The stranger guy</h2></div>
+            <div class="project" style="background-image: url('images/projects/img16.jpg');"><h2>The cameraman</h2></div>          
+            <div class="project" style="background-image: url('images/projects/img17.jpg');"><h2>Lighting rooms</h2></div>
+            <div class="project" style="background-image: url('images/projects/img18.jpg');"><h2>Lighting tables</h2></div>
+            <div class="project" style="background-image: url('images/projects/img19.jpg');"><h2>The guy</h2></div>
+            <div class="project" style="background-image: url('images/projects/img20.jpg');"><h2>The kid</h2></div>
+            <div class="project" style="background-image: url('images/projects/img21.jpg');"><h2>Two serious guys</h2></div>
+            <div class="project" style="background-image: url('images/projects/img22.jpg');"><h2>Red woman</h2></div>
+            <div class="project" id="last__project" style="background-image: url('images/projects/img05.jpg');"><h2>Bad Sun</h2></div>
+            <div class="project" id="last__project" style="background-image: url('images/projects/img13.jpg');"><h2>The oil lamp</h2></div>
+            <div class="project" id="index__project" style="background-image: url('images/projects/img09.jpg');"><h2>Magenta girl</h2></div>
+            <div class="project" id="index__project" style="background-image: url('images/projects/img23.jpg');"><h2>The hospital</h2></div>
+        </main>
+        <!-- El footer es el mismo en todos los htmls -->
+        <footer>
+            <div class="footer__element">
+                <h3>Dirección</h3>
+                <p>C/ Luis de Hoyos Sainz, 112<br>28030 Madrid</p>
+            </div>
+            <div class="footer__element">
+                <h3>Redes sociales</h3>
+                <!-- Enlaces provisionales hasta apertura de negocio -->
+                <div id="rrss__logo__group">
+                    <a href="https://www.behance.net/" target=”_blank”><div id="logo__behance"></div></a>
+                    <a href="https://twitter.com/" target=”_blank”><div id="logo__twitter"></div></a>
+                    <a href="https://www.instagram.com/" target=”_blank”><div id="logo__instagram"></div></a>
+                </div>
+            </div>
+            <div class="footer__element">
+                <a href="pages/quieresColaborar.html" id="colab"><h3>¿Quieres colaborar?</h3></a>
+                <p>Nosotros queremos colaborar contigo.</p>
+            </div>
+            <div id="particles-js-footer"></div>
+        </footer>
+        <script src="./particles.js-2.0.0/particles.js"></script>
+        <script>
+            particlesJS.load("particles-js-footer", "./particles.js-2.0.0/particlesjs-config.json", function () {
+                console.log("callback - particles.js config loaded");
+            });
+        </script>
+    </body>
+</html>

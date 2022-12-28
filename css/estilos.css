@@ -40,7 +40,7 @@ span {
     position: absolute;
     z-index: -1;
     width: 100%;
-    max-height: 10%;
+    max-height: 87px;
     top: 0;
     background: #000000;
     overflow: hidden;
@@ -59,7 +59,7 @@ span {
 header {
     margin: 0;
     width: 100%;
-    height: 10%;
+    height: 87px;
 }
 
 #index__header {
@@ -449,7 +449,7 @@ a:hover {
 @media only screen and (min-width: 596px) and (max-width: 949px) {
 
     #container__logo__nav {
-        padding: 25px 25px 0 25px;
+        padding: 25px;
     }
     
     #logo img {
@@ -551,7 +551,7 @@ a:hover {
 @media only screen and (min-width: 950px) {
 
     #container__logo__nav {
-        padding: 25px 25px 0 25px;
+        padding: 25px;
     }
 
     #index__header {

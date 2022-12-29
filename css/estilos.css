@@ -15,7 +15,7 @@ body {
     font-size: 20px;
     min-width: 400px;
     min-height: 800px;
-    height: 100vh;
+    height: 100%;
 }
 
 .short__body {

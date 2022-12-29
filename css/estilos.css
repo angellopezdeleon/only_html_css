@@ -12,9 +12,9 @@ body {
     color: white;
     text-shadow: rgb(49, 49, 49) 0.05em 0.05em 0.05em;
     font-family: 'Fredoka', sans-serif;
-
     font-size: 20px;
-    min-width: 100%;
+    min-width: 400px;
+    min-height: 800px;
     height: 100vh;
 }
 

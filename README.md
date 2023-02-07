@@ -5,10 +5,9 @@
 <a href="HTML-url">![HTML][HTML]</a>	
 <a href="CSS-url">![CSS][CSS]</a>
 
-  <a href="https://github.com/angellopezdeleon/only_html_css">
-      <img src="images/logos/soloNodalLogo2.png" alt="Logo" width="380" height="80">
-  </a>
-
+<a href="https://github.com/angellopezdeleon/only_html_css">
+  <img src="images/logos/soloNodalLogo3.png" alt="Logo" width="380" height="80">
+</a>
 
   <h3 align="center">only_html_css</h3>
   

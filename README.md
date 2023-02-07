@@ -4,6 +4,7 @@
 
 <a href="HTML-url">![HTML][HTML]</a>	
 <a href="CSS-url">![CSS][CSS]</a>
+<a href="particles.js-url">![pacticles.js][particles.js]</a>
 
 <a href="https://github.com/angellopezdeleon/only_html_css">
   <img src="images/logos/soloNodalLogo3.png" alt="Logo" width="380" height="80">
@@ -12,7 +13,7 @@
   <h3 align="center">only_html_css</h3>
   
   <p align="center">
-    Un proyecto básico usando HTML y CSS
+    Un proyecto básico usando HTML y CSS... y la libraríe Particles.js
     <br />
     <a href="https://github.com/angellopezdeleon/only_html_css"><strong>Explora el código »</strong></a>
     <br />
@@ -57,3 +58,5 @@ Project Link: [https://github.com/angellopezdeleon/only_html_css](https://github
 [HTML-url]: https://developer.mozilla.org/es/docs/Web/HTML
 [CSS]: https://img.shields.io/badge/CSS-blue?style=for-the-badge&logo=css3&logoColor=white
 [CSS-url]: https://developer.mozilla.org/es/docs/Web/CSS
+[particles.js]: https://img.shields.io/badge/particles.js-red?style=for-the-badge
+[particles.js-url]: https://vincentgarreau.com/particles.js/

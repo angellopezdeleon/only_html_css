@@ -23,7 +23,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/%C3%A1ngel-l%C3%B3pez-de-le%C3%B3n-jaramillo-801a6261/]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 

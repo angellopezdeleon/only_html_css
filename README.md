@@ -18,7 +18,7 @@
     <a href="https://github.com/angellopezdeleon/only_html_css"><strong>Explora el código »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/angellopezdeleon/only_html_css">Mira cómo se ve</a>
+    <a href="https://angellopezdeleon.github.io/only_html_css/">Mira cómo se ve</a>
     ·
     <a href="https://github.com/angellopezdeleon/only_html_css/issues">Reporta problemas</a>
   </p>
